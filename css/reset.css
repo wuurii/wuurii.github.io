@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&amp;display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	background-color: #fff;
+	color: #000;
+	font-size: 16px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 400;
+}
+button {
+	cursor: pointer;
+	background-color: #fff;
+	border: none;
+	padding: 0;
+}
+select {
+	appearance: none;
+	background: url(../img/shop/select_arrow.png) no-repeat center right 5px;
+}
+button, input, select,textarea {
+	outline: none;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 16px;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+em {
+	font-style: normal;
+}
+input[type=checkbox], input[type=radio] {
+	display: none;
+}
+table {
+	border-collapse: collapse;
+}
