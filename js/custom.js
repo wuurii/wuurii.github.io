@@ -65,9 +65,9 @@ $(function(){
 
 	// cart layer popup
 	$('.hover_buy button, .cart_btn').click(function(){
-		/* JYD Ãß°¡ s */
+		/* JYD ì¶”ê°€ s */
 		fnCartLoad();
-		/* JYD Ãß°¡ e */
+		/* JYD ì¶”ê°€ e */
 		$('.cart_layer_popup, .cart_overlay, body').addClass('active');
 	});
 	$('.cart_layer_popup_close, .cart_overlay').click(function(){
@@ -128,12 +128,12 @@ $(function(){
 	$('.search_tab_btns button').click(function(){
 		$('.search_tab_btns button').removeClass('on');
 		$(this).addClass('on');
-		// JYD Ãß°¡
+		// JYD ì¶”ê°€
 		if( typeof fnCateJson === 'function') {
 			fnCateJson();
 		}
 		load_json(1);
-		// TODO: JYD ÁÖ¼®Ã³¸®
+		// TODO: JYD ì£¼ì„ì²˜ë¦¬
 		/* var thisCurrent = $(this).attr('data-search-tab');
 		$('.search_tab').removeClass('active');
 		$('#' + thisCurrent).addClass('active'); */
@@ -158,7 +158,7 @@ $(function(){
 	const swiper = new Swiper('.swiper', {
 		// Default parameters
 		speed: 800,
-		autoplay: false, // ±âÁ¸ true ¹è³Ê°¡ 1°³¶ó¼­ ¼öÁ¤ÇÔ. 20240116
+		autoplay: false, // ê¸°ì¡´ true ë°°ë„ˆê°€ 1ê°œë¼ì„œ ìˆ˜ì •í•¨. 20240116
 		delay: 3000,
 		slidesPerView: 1,
 		pagination: {
@@ -191,8 +191,8 @@ $(function(){
 	})
 
 	/* new product swiper */
-	const swiper2 = new Swiper('.swiper-new', { // swiper Å¬·¡½º ÀÌ¸§ º¯°æÇÏ¸é cssµµ ½º¿ÍÀÌÆÛ ±âº»À¸·Î Àû¿ëÇØ¾ßÇÔ
-		wrapperClass: 'swiper-wrapper-new-product', // wrapper Å¬·¡½º ÀÌ¸§ º¯°æÇÏ¸é cssµµ ½º¿ÍÀÌÆÛ ±âº»À¸·Î Àû¿ëÇØ¾ßÇÔ
+	const swiper2 = new Swiper('.swiper-new', { // swiper í´ëž˜ìŠ¤ ì´ë¦„ ë³€ê²½í•˜ë©´ cssë„ ìŠ¤ì™€ì´í¼ ê¸°ë³¸ìœ¼ë¡œ ì ìš©í•´ì•¼í•¨
+		wrapperClass: 'swiper-wrapper-new-product', // wrapper í´ëž˜ìŠ¤ ì´ë¦„ ë³€ê²½í•˜ë©´ cssë„ ìŠ¤ì™€ì´í¼ ê¸°ë³¸ìœ¼ë¡œ ì ìš©í•´ì•¼í•¨
 		slidesPerView: 3.7,
 		// slidesPerView: 4,
   	spaceBetween: 30,
@@ -230,8 +230,8 @@ $(function(){
 	})
 
 	/* best product swiper */
-	const swiper3 = new Swiper('.swiper-best', { // swiper Å¬·¡½º ÀÌ¸§ º¯°æÇÏ¸é cssµµ ½º¿ÍÀÌÆÛ ±âº»À¸·Î Àû¿ëÇØ¾ßÇÔ
-		wrapperClass: 'swiper-wrapper-best-product', // wrapper Å¬·¡½º ÀÌ¸§ º¯°æÇÏ¸é cssµµ ½º¿ÍÀÌÆÛ ±âº»À¸·Î Àû¿ëÇØ¾ßÇÔ
+	const swiper3 = new Swiper('.swiper-best', { // swiper í´ëž˜ìŠ¤ ì´ë¦„ ë³€ê²½í•˜ë©´ cssë„ ìŠ¤ì™€ì´í¼ ê¸°ë³¸ìœ¼ë¡œ ì ìš©í•´ì•¼í•¨
+		wrapperClass: 'swiper-wrapper-best-product', // wrapper í´ëž˜ìŠ¤ ì´ë¦„ ë³€ê²½í•˜ë©´ cssë„ ìŠ¤ì™€ì´í¼ ê¸°ë³¸ìœ¼ë¡œ ì ìš©í•´ì•¼í•¨
 		slidesPerView: 5,
   	spaceBetween: 15,
 		speed: 800,
@@ -275,7 +275,7 @@ $(function(){
 	})
 
 	const swiper4 = new Swiper('.swiper-category', {
-		wrapperClass: 'swiper-wrapper-category', // wrapper Å¬·¡½º ÀÌ¸§ º¯°æÇÏ¸é cssµµ ½º¿ÍÀÌÆÛ ±âº»À¸·Î Àû¿ëÇØ¾ßÇÔ
+		wrapperClass: 'swiper-wrapper-category', // wrapper í´ëž˜ìŠ¤ ì´ë¦„ ë³€ê²½í•˜ë©´ cssë„ ìŠ¤ì™€ì´í¼ ê¸°ë³¸ìœ¼ë¡œ ì ìš©í•´ì•¼í•¨
 		speed: 800,
 		autoplay: false,
 		delay: 3000,
@@ -313,7 +313,7 @@ $(function(){
 			clickable: true,
 		},
 	});
-	// ·çÇÁ ¶§¹®¿¡ 2°³°¡ ´õ »ý±è -> ·çÇÁ ÇØÁ¦
+	// ë£¨í”„ ë•Œë¬¸ì— 2ê°œê°€ ë” ìƒê¹€ -> ë£¨í”„ í•´ì œ
 	
 	swiper4.controller.control = pagingSwiper;
 	pagingSwiper.controller.control = swiper4;

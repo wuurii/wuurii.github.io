@@ -1022,37 +1022,37 @@
 		color: #000;
 	}
 	.td1 span:before {
-		content: 'È¸¿ø¹øÈ£';
+		content: 'íšŒì›ë²ˆí˜¸';
 		float: left;
 		color: #898989;
 		font-weight: 500;
 	}
 	.td2 span:before {
-		content: 'È¸¿ø¸í';
+		content: 'íšŒì›ëª…';
 		float: left;
 		color: #898989;
 		font-weight: 500;
 	}
 	.td3 span:before {
-		content: '°¡ÀÔÀÏÀÚ';
+		content: 'ê°€ì…ì¼ì';
 		float: left;
 		color: #898989;
 		font-weight: 500;
 	}
 	.td4 span:before {
-		content: '½ÅÃ»ÀÏÀÚ';
+		content: 'ì‹ ì²­ì¼ì';
 		float: left;
 		color: #898989;
 		font-weight: 500;	
 	}
 	.td5 span:before {
-		content: 'È¸¿ø½ÇÀûXP';
+		content: 'íšŒì›ì‹¤ì XP';
 		float: left;
 		color: #898989;
 		font-weight: 500;	
 	}
 	.td6 span:before {
-		content: 'Á÷ ÃßÃµÈ¸¿ø¼ö';
+		content: 'ì§ ì¶”ì²œíšŒì›ìˆ˜';
 		float: left;
 		color: #898989;
 		font-weight: 500;	
@@ -1062,7 +1062,7 @@
 		gap: 10px;
 	}
 	.td7 div:before {
-		content: 'ÈÄ¿øÀÎ ÁöÁ¤';
+		content: 'í›„ì›ì¸ ì§€ì •';
 		margin-right: auto;
 		color: #898989;
     font-size: 14px;
@@ -1072,7 +1072,7 @@
 		min-height: 49px;
 	}
 	.td8 span:before {
-		content: 'µî·Ï';
+		content: 'ë“±ë¡';
 		float: left;
 		color: #898989;
 		font-weight: 500;	

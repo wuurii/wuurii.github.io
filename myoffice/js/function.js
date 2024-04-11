@@ -52,7 +52,7 @@ jQuery.fn.validation = function(){
 jQuery.fn.serializeObject = function() {
 	var obj = null;
 	try {
-		// this[0].tagNameÀÌ form tagÀÏ °æ¿ì
+		// this[0].tagNameì´ form tagì¼ ê²½ìš°
 		if(this[0].tagName && this[0].tagName.toUpperCase() == "FORM" ) {
 			// var charset = this.context.charset;
 			var charset = document.characterSet;
@@ -60,11 +60,11 @@ jQuery.fn.serializeObject = function() {
 			if(arr){
 				obj = {};
 				jQuery.each(arr, function() {
-					// utf-8 ÀÌ ¾Æ´Ï¸é value°¡ ¿µ¹®, ¼ıÀÚ°¡ ¾Æ´Ñ°æ¿ì escape Ã³¸®
+					// utf-8 ì´ ì•„ë‹ˆë©´ valueê°€ ì˜ë¬¸, ìˆ«ìê°€ ì•„ë‹Œê²½ìš° escape ì²˜ë¦¬
 					if (charset !== "UTF-8" ) {
 						this.value = ((new RegExp(/[^a-z|^0-9]/gi)).test(this.value))? escape(this.value) : this.value;
 					}
-					// objÀÇ key°ªÀº arrÀÇ name, objÀÇ value´Â value°ª
+					// objì˜ keyê°’ì€ arrì˜ name, objì˜ valueëŠ” valueê°’
 					if (obj[this.name]) {
 						obj[this.name] += "," + this.value;
 					} else {
@@ -80,17 +80,17 @@ jQuery.fn.serializeObject = function() {
 	return obj;
 };
 
-// cookie °ü·Ã
+// cookie ê´€ë ¨
 function setCookie( name, value, expiredays )
 {
-	//ÄíÅ°¸¦ »ı¼ºÇØ ÆÄ±âÀÏÀ» °áÁ¤ ÇÑ´Ù.
+	//ì¿ í‚¤ë¥¼ ìƒì„±í•´ íŒŒê¸°ì¼ì„ ê²°ì • í•œë‹¤.
 	var todayDate = new Date();
 	todayDate.setDate( todayDate.getDate() + expiredays );
 	document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
 }
 
 function getCookie( name ) 
-{ //ÄíÅ°°¡ ÀÖÀ¸¸é ÀÔ·ÂÇÑ name °ªÀ» ¸®ÅÏÇÑ´Ù
+{ //ì¿ í‚¤ê°€ ìˆìœ¼ë©´ ì…ë ¥í•œ name ê°’ì„ ë¦¬í„´í•œë‹¤
 	var nameOfCookie = name + "="; 
 	var x = 0; 
 	while ( x <= document.cookie.length ) 
@@ -118,10 +118,10 @@ function echoNull2Blank(str) {
 	if (str == null) return '';
 	return str;
 }
-// ÄŞ¸¶(,) Ã³¸® ##################################################
+// ì½¤ë§ˆ(,) ì²˜ë¦¬ ##################################################
 function formatComma(num, pos) {
 
-	if (!pos) pos = 1;  //¼Ò¼ıÁ¡ ÀÌÇÏ ÀÚ¸®¼ö
+	if (!pos) pos = 1;  //ì†Œìˆ«ì  ì´í•˜ ìë¦¬ìˆ˜
 	var re = /(-?\d+)(\d{3}[,.])/;
 
 	var strNum = stripComma(num.toString());
@@ -143,13 +143,13 @@ function formatComma(num, pos) {
 		return arrNum[0].split(".")[0];
 	}
 }
-// ÄŞ¸¶(,) Á¦°Å ##################################################
+// ì½¤ë§ˆ(,) ì œê±° ##################################################
 function stripComma(str) {
 	var re = /,/g;
 	return str.replace(re, "");
 }
 
-//ÀÌÀü ³¯Â¥
+//ì´ì „ ë‚ ì§œ
 function fnSetLastDate(fOPT, fNUM){
 	var today = new Date();
 	var rtnVal = false;
@@ -180,7 +180,7 @@ function fnStrDate(fDATE){
 	}else{ return false;}
 }
 
-// ÆäÀÌÂ¡
+// í˜ì´ì§•
 (function($) {
     $.fn.jqueryPager = function(options) {
         var defaults = {
@@ -224,8 +224,8 @@ function fnStrDate(fDATE){
 
             if (sPage > 1) {
 				var prePage = (currentPage <= 1) ? 1 : currentPage - 1;
-				// html += '<button type="button" onclick="'+ clickEvent +'(1);"><img src="/img/shop/page_arrow_double_left.png"></button>';	// ÇÑÆäÀÌÁö ÀÌµ¿
-				html += '<button type="button" onclick="'+ clickEvent +'(' + (sPage-pageBlock) + ');"><img src="/img/shop/page_arrow_double_left.png"></button>';	// È÷µçÆäÀÌÁö ´ÜÀ§ ÀÌµ¿
+				// html += '<button type="button" onclick="'+ clickEvent +'(1);"><img src="/img/shop/page_arrow_double_left.png"></button>';	// í•œí˜ì´ì§€ ì´ë™
+				html += '<button type="button" onclick="'+ clickEvent +'(' + (sPage-pageBlock) + ');"><img src="/img/shop/page_arrow_double_left.png"></button>';	// íˆë“ í˜ì´ì§€ ë‹¨ìœ„ ì´ë™
 				html += '<button type="button" onclick="'+ clickEvent +'(' + prePage + ');"><img src="/img/shop/page_arrow_single_left.png"></button>';
             } else if (pageTotalCnt !== 0) {
 				var prePage = (currentPage <= 1) ? 1 : currentPage - 1;
@@ -247,8 +247,8 @@ function fnStrDate(fDATE){
 
             if (ePage < pageTotalCnt) {
 				var aftPage = ((currentPage + 1 ) > pageTotalCnt) ? pageTotalCnt : currentPage + 1;
-				// html += '<button type="button" onclick="'+ clickEvent +'(' + aftPage + ');"><img src="/img/shop/page_arrow_single_right.png"></button>';	// ÇÑÆäÀÌÁö ÀÌµ¿
-				html += '<button type="button" onclick="'+ clickEvent +'(' + ( ePage + 1 ) + ');"><img src="/img/shop/page_arrow_single_right.png"></button>';	// È÷µçÆäÀÌÁö ´ÜÀ§ ÀÌµ¿
+				// html += '<button type="button" onclick="'+ clickEvent +'(' + aftPage + ');"><img src="/img/shop/page_arrow_single_right.png"></button>';	// í•œí˜ì´ì§€ ì´ë™
+				html += '<button type="button" onclick="'+ clickEvent +'(' + ( ePage + 1 ) + ');"><img src="/img/shop/page_arrow_single_right.png"></button>';	// íˆë“ í˜ì´ì§€ ë‹¨ìœ„ ì´ë™
 				html += '<button type="button" onclick="'+ clickEvent +'(' + pageTotalCnt + ');"><img src="/img/shop/page_arrow_double_right.png"></button>';
             } else if (pageTotalCnt !== 0) {
 				var aftPage = ((currentPage + 1 ) > pageTotalCnt) ? pageTotalCnt : currentPage + 1;
@@ -261,23 +261,23 @@ function fnStrDate(fDATE){
     };
 })(jQuery);
 
-// ¼ıÀÚÅ°¸¸ ÀÔ·Â -- InpuOnlyNumber(this);
+// ìˆ«ìí‚¤ë§Œ ì…ë ¥ -- InpuOnlyNumber(this);
 function numkeyCheck(e) {
 	var keyValue = event.keyCode;
 	if( ((keyValue >= 48) && (keyValue <= 57)) ) return true;
 	else return false;
 }
 
-// ÀÌ¸ŞÀÏ Ã¼Å© Á¤±Ô½Ä 
+// ì´ë©”ì¼ ì²´í¬ ì •ê·œì‹ 
 function isEmail(asValue) {
 	var regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
-	return regExp.test(asValue); // Çü½Ä¿¡ ¸Â´Â °æ¿ì true ¸®ÅÏ
+	return regExp.test(asValue); // í˜•ì‹ì— ë§ëŠ” ê²½ìš° true ë¦¬í„´
 }
 
-//ÈŞ´ëÆù ÀüÈ­ Ã¼Å© Á¤±Ô½Ä
+//íœ´ëŒ€í° ì „í™” ì²´í¬ ì •ê·œì‹
 function isCelluar(asValue) {
 	var regExp = /^01(?:0|1|[6-9])-(?:\d{3}|\d{4})-\d{4}$/;
-	return regExp.test(asValue); // Çü½Ä¿¡ ¸Â´Â °æ¿ì true ¸®ÅÏ
+	return regExp.test(asValue); // í˜•ì‹ì— ë§ëŠ” ê²½ìš° true ë¦¬í„´
 }
 
 function numberMaxLength(e){

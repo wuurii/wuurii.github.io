@@ -38,7 +38,7 @@ Copyright 2015 Kevin Sylvestre
     return Animation;
 
   })();
-//duration 3600 > 3600000 º¯°æ kdh 
+//duration 3600 > 3600000 ë³€ê²½ kdh 
   Growl = (function() {
     Growl.settings = {
       namespace: 'growl',

@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<!-- Mirrored from wuurii.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Apr 2024 00:09:12 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=euc-kr" /><!-- /Added by HTTrack -->
 <head>
-	<meta charset="EUC-KR">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
-	<title>¿ì¸®Ä¿¸Ó½º</title>
+	<title>ìš°ë¦¬ì»¤ë¨¸ìŠ¤</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -34,12 +32,12 @@ $(function(){
 	}
 });
 function setTodayNoPopup(fID){
-	setCookie(fID, fID, 1 );	//ÄíÅ° »ı¼º
-	$('.index_popup, .pop_overlay').addClass('closed');		//ÆË¾÷ Á¾·á
+	setCookie(fID, fID, 1 );	//ì¿ í‚¤ ìƒì„±
+	$('.index_popup, .pop_overlay').addClass('closed');		//íŒì—… ì¢…ë£Œ
 }
 function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 	if ("" == "") {
-		alert("·Î±×ÀÎÀÌ ÇÊ¿äÇÑ ¼­ºñ½ºÀÔ´Ï´Ù.\n·Î±×ÀÎ È­¸éÀ¸·Î ÀÌµ¿ÇÕ´Ï´Ù.");
+		alert("ë¡œê·¸ì¸ì´ í•„ìš”í•œ ì„œë¹„ìŠ¤ì…ë‹ˆë‹¤.\në¡œê·¸ì¸ í™”ë©´ìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤.");
 		location.href = 'member/login.html';
 		return false;
 	} else {
@@ -63,7 +61,7 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 				var cart_count = (items.cart_count) ? items.cart_count : 0;
 				$('#spnTopCartCnt').text(formatComma(cart_count,0));
 				if (items.rtn_state == "success"){
-					if (confirm(rtn_msg+"\n\nÁö±İ Àå¹Ù±¸´Ï¸¦ È®ÀÎÇÏ½Ã°Ú½À´Ï±î?")) {
+					if (confirm(rtn_msg+"\n\nì§€ê¸ˆ ì¥ë°”êµ¬ë‹ˆë¥¼ í™•ì¸í•˜ì‹œê² ìŠµë‹ˆê¹Œ?")) {
 						// location.href = "/shop/cart.html";
 						$('.cart_btn').trigger('click');
 					}
@@ -106,19 +104,19 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 							<li class="right_sub_title">Company</li>
 							<li><a href="community/who.html">Who we are?</a></li>
 							<li><a href="community/ourmission.html">Our Mission</a></li>
-							<li><a href="community/cs_center.html">Ã£¾Æ¿À½Ã´Â±æ</a></li>
-							<!-- <li><a href="/community/cs_center.html">¿À½Ã´Â±æ</a></li> -->
+							<li><a href="community/cs_center.html">ì°¾ì•„ì˜¤ì‹œëŠ”ê¸¸</a></li>
+							<!-- <li><a href="/community/cs_center.html">ì˜¤ì‹œëŠ”ê¸¸</a></li> -->
 						</ul>
 						<ul class="right_sub">
 							<li style="cursor: pointer;" onclick="location.href='shop/brand_list.html'" class="right_sub_title">Brand</li>
 						</ul>
 						<ul class="right_sub">
 							<li class="right_sub_title">Community</li>
-							<li><a href="community/company_news.html">È¸»ç¼Ò½Ä</a></li>
+							<li><a href="community/company_news.html">íšŒì‚¬ì†Œì‹</a></li>
 							<li><a href="community/sns.html">SNS</a></li>
 							<li><a href="community/faq.html">FAQ</a></li>
-							<li><a href="http://pf.kakao.com/_kzBSb/chat">Áú¹®ÇÏ±â</a></li>
-							<li><a href="myoffice/compensation_plan.html">¸®¿öµåÇÁ·Î±×·¥</a></li>
+							<li><a href="http://pf.kakao.com/_kzBSb/chat">ì§ˆë¬¸í•˜ê¸°</a></li>
+							<li><a href="myoffice/compensation_plan.html">ë¦¬ì›Œë“œí”„ë¡œê·¸ë¨</a></li>
 						</ul>
 					</div>
 				</div>
@@ -128,29 +126,29 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 				<div class="shopping_sub">
 					<div class="shopping_sub_inner">
 						<ul class="left_btn">
-							<li><a href="shop/product_list.html">ÀüÃ¼»óÇ°</a></li>
-							<li><a href="shop/event.html">ÀÌº¥Æ®</a></li>
-							<li><a href="shop/product_list6261.html?s_cate_cd1=03">¼¼Æ®»óÇ°</a></li>
-							<li><a href="shop/autoship_product_list.html">½º¸¶Æ®½Ê</a></li>
+							<li><a href="shop/product_list.html">ì „ì²´ìƒí’ˆ</a></li>
+							<li><a href="shop/event.html">ì´ë²¤íŠ¸</a></li>
+							<li><a href="shop/product_list6261.html?s_cate_cd1=03">ì„¸íŠ¸ìƒí’ˆ</a></li>
+							<li><a href="shop/autoship_product_list.html">ìŠ¤ë§ˆíŠ¸ì‹­</a></li>
 						</ul>
 						<ul class="right_sub">
-							<li style="cursor: pointer;" onclick="location.href='shop/product_list.html'" class="right_sub_title">¼îÇÎ¸ô</li>
+							<li style="cursor: pointer;" onclick="location.href='shop/product_list.html'" class="right_sub_title">ì‡¼í•‘ëª°</li>
 							<li><a href="shop/product_list6261.html?s_cate_cd1=03">SET</a></li><li><a href="shop/product_list27a3.html?s_cate_cd1=01">BEAUTY</a></li><li><a href="shop/product_list85a5.html?s_cate_cd1=02">HEALTH</a></li><li><a href="shop/product_listb552.html?s_cate_cd1=05">LIVING</a></li>
 						</ul>
 						<ul class="right_sub">
-							<li style="cursor: pointer;" onclick="location.href='shop/product_list_over.html'" class="right_sub_title">ÇØ¿ÜÁ÷±¸</li>
+							<li style="cursor: pointer;" onclick="location.href='shop/product_list_over.html'" class="right_sub_title">í•´ì™¸ì§êµ¬</li>
 							<li><a href="shop/product_list_overaa69.html?s_cate_cd1=2004">SET</a></li><li><a href="shop/product_list_over6281.html?s_cate_cd1=2001">BEAUTY</a></li><li><a href="shop/product_list_over85d6.html?s_cate_cd1=2002">HEALTH</a></li><li><a href="shop/product_list_over9d6f.html?s_cate_cd1=2003">LIVING</a></li>
 						</ul>
 						<!-- <ul class="right_sub">
-							<li style="cursor: pointer;" onclick="location.href='/shop/product_list_subscribe.html'" class="right_sub_title">±¸µ¶</li>
+							<li style="cursor: pointer;" onclick="location.href='/shop/product_list_subscribe.html'" class="right_sub_title">êµ¬ë…</li>
 							
 						</ul> -->
 						<ul class="right_sub">
-							<li style="cursor: pointer;" onclick="location.href='https://wuuriishop.co.kr/'" class="right_sub_title">Á¦ÈŞ»çÀÌÆ®</li>
+							<li style="cursor: pointer;" onclick="location.href='https://wuuriishop.co.kr/'" class="right_sub_title">ì œíœ´ì‚¬ì´íŠ¸</li>
 							
 						</ul>
 						<ul class="right_sub" style="background-color: #fff;">
-							<li style="display:none;" class="right_sub_title">ºê·£µå</li>
+							<li style="display:none;" class="right_sub_title">ë¸Œëœë“œ</li>
 							<li style="display:none;"><a href="#none">A1</a></li>
 							<li style="display:none;"><a href="#none">ABCEDF</a></li>
 							<li style="display:none;"><a href="#none">Wuurii</a></li>
@@ -163,23 +161,23 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 				<div class="shopping_sub">
 					<div class="company_sub_inner">
 						<ul class="right_sub">
-							<li class="right_sub_title">ºñÁî´Ï½º</li>
-							<li><a href="academy/businessc536.html?bbs_cate=Y0001">È¸»ç¼Ò°³</a></li>
-							<li><a href="academy/business16a8.html?bbs_cate=Y0002">¸®¿öµåÇÁ·Î±×·¥</a></li>
+							<li class="right_sub_title">ë¹„ì¦ˆë‹ˆìŠ¤</li>
+							<li><a href="academy/businessc536.html?bbs_cate=Y0001">íšŒì‚¬ì†Œê°œ</a></li>
+							<li><a href="academy/business16a8.html?bbs_cate=Y0002">ë¦¬ì›Œë“œí”„ë¡œê·¸ë¨</a></li>
 						</ul>
 						<ul class="right_sub">
-							<li class="right_sub_title">Á¦Ç°</li>
-							<!-- <li><a href="/academy/business.html?bbs_cate=Y0003">ºê·£µå</a></li> -->
-							<li><a href="academy/businessd4ec.html?bbs_cate=Y0004">Á¦Ç°</a></li>
+							<li class="right_sub_title">ì œí’ˆ</li>
+							<!-- <li><a href="/academy/business.html?bbs_cate=Y0003">ë¸Œëœë“œ</a></li> -->
+							<li><a href="academy/businessd4ec.html?bbs_cate=Y0004">ì œí’ˆ</a></li>
 						</ul>
 						<ul class="right_sub">
-							<li style="cursor: pointer;" onclick="location.href='academy/business6f94.html?bbs_cate=Y0005'" class="right_sub_title">e-·¯´×</li>
+							<li style="cursor: pointer;" onclick="location.href='academy/business6f94.html?bbs_cate=Y0005'" class="right_sub_title">e-ëŸ¬ë‹</li>
 						</ul>
 					</div>
 				</div>
 			</li>
 			<li><a href="myoffice/main.html">My Office</a></li>
-			<!-- <li><a href="/community/faq.html">Ä¿¹Â´ÏÆ¼</a></li> -->
+			<!-- <li><a href="/community/faq.html">ì»¤ë®¤ë‹ˆí‹°</a></li> -->
 		</ul>
 	</nav>
 	<aside>
@@ -204,14 +202,14 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 			
 			<form name="frmSearchMain" method="get" action="https://wuurii.com/shop/search_result.html">
 			<div class="search_box">
-				<input type="text" name="searchValue" id="searchValue" value="" placeholder="Á¦Ç°¸íÀ» °Ë»öÇØÁÖ¼¼¿ä.">
+				<input type="text" name="searchValue" id="searchValue" value="" placeholder="ì œí’ˆëª…ì„ ê²€ìƒ‰í•´ì£¼ì„¸ìš”.">
 				<button type="submit"><img src="img/main/search_icon2.png"></button>
 			</div>
 			</form>
 			<!-- <div class="search_key">
-				<p>ÃßÃµ °Ë»ö¾î</p>
-				<a href="javascript:void(0)">#±â´É¼ºÈ­ÀåÇ°</a>
-				<a href="javascript:void(0)">#°Ç°­½ÄÇ°</a>
+				<p>ì¶”ì²œ ê²€ìƒ‰ì–´</p>
+				<a href="javascript:void(0)">#ê¸°ëŠ¥ì„±í™”ì¥í’ˆ</a>
+				<a href="javascript:void(0)">#ê±´ê°•ì‹í’ˆ</a>
 			</div> -->
 			<a class="search_pop_close" href="javascript:void(0)"><img src="img/main/search_close.png"></a>
 		</div>
@@ -228,15 +226,15 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 			</div>
 			<div class="mo_menu_login">
 				
-				<p>¿ì¸®Ä¿¸Ó½º ÀÌ¿ë°ú Á¦Ç°À» ±¸ÀÔÇÏ½Ã·Á¸é ·Î±×ÀÎ ÇÏ¼¼¿ä.</p>
+				<p>ìš°ë¦¬ì»¤ë¨¸ìŠ¤ ì´ìš©ê³¼ ì œí’ˆì„ êµ¬ì…í•˜ì‹œë ¤ë©´ ë¡œê·¸ì¸ í•˜ì„¸ìš”.</p>
 				
 				<div class="mo_login_join">
 					
 					<div class="mo_login_box">
-						<a href="member/login.html"><img src="img/main/mo_login.png">·Î±×ÀÎ</a>
+						<a href="member/login.html"><img src="img/main/mo_login.png">ë¡œê·¸ì¸</a>
 					</div>
 					<div class="mo_join_box">
-						<a href="member/join01.html"><img src="img/main/mo_join.png">È¸¿ø°¡ÀÔ</a>
+						<a href="member/join01.html"><img src="img/main/mo_join.png">íšŒì›ê°€ì…</a>
 					</div>
 					
 				</div>
@@ -244,7 +242,7 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 			<div class="mo_menu_gnb">
 				<ul class="mo_menu_gnb_big">
 					<li>
-						<a class="mo_menu_gnb_big_trigger" href="javascript:void(0)">È¸»ç¼Ò°³</a>
+						<a class="mo_menu_gnb_big_trigger" href="javascript:void(0)">íšŒì‚¬ì†Œê°œ</a>
 						<div class="mo_shop_sub">
 							<div class="mo_shop_sub_bottom">
 								<ul>
@@ -254,7 +252,7 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 											<div class="mo_menu_gnb_small">
 												<a href="community/who.html">Who we are?</a>
 												<a href="community/ourmission.html">Our Mission</a>
-												<a href="community/cs_center.html">Ã£¾Æ¿À½Ã´Â±æ</a>
+												<a href="community/cs_center.html">ì°¾ì•„ì˜¤ì‹œëŠ”ê¸¸</a>
 											</div>
 										</div>
 									</li>
@@ -265,11 +263,11 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 										<a href="javascript:void(0)">Community</a>
 										<div class="mo_menu_gnb_small_wrap">
 											<div class="mo_menu_gnb_small">
-												<a href="community/company_news.html">È¸»ç¼Ò½Ä</a>
+												<a href="community/company_news.html">íšŒì‚¬ì†Œì‹</a>
 												<a href="community/sns.html">SNS</a>
 												<a href="community/faq.html">FAQ</a>
-												<a href="http://pf.kakao.com/_kzBSb/chat">Áú¹®ÇÏ±â</a>
-												<a href="myoffice/compensation_plan.html">¸®¿öµåÇÁ·Î±×·¥</a>
+												<a href="http://pf.kakao.com/_kzBSb/chat">ì§ˆë¬¸í•˜ê¸°</a>
+												<a href="myoffice/compensation_plan.html">ë¦¬ì›Œë“œí”„ë¡œê·¸ë¨</a>
 											</div>
 										</div>
 									</li>
@@ -278,18 +276,18 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 						</div>
 					</li>
 					<li>
-						<a class="mo_menu_gnb_big_trigger" href="javascript:void(0)">¼îÇÎ</a>
+						<a class="mo_menu_gnb_big_trigger" href="javascript:void(0)">ì‡¼í•‘</a>
 						<div class="mo_shop_sub">
 							<div class="mo_shop_sub_top">
-								<a class="on" href="shop/product_list.html">ÀüÃ¼»óÇ°</a>
-								<a href="shop/event.html">ÀÌº¥Æ®</a>
-								<a href="shop/product_list6261.html?s_cate_cd1=03">¼¼Æ®»óÇ°</a>
-								<a href="shop/autoship_product_list.html">½º¸¶Æ®½Ê</a>
+								<a class="on" href="shop/product_list.html">ì „ì²´ìƒí’ˆ</a>
+								<a href="shop/event.html">ì´ë²¤íŠ¸</a>
+								<a href="shop/product_list6261.html?s_cate_cd1=03">ì„¸íŠ¸ìƒí’ˆ</a>
+								<a href="shop/autoship_product_list.html">ìŠ¤ë§ˆíŠ¸ì‹­</a>
 							</div>
 							<div class="mo_shop_sub_bottom">
 								<ul>
 									<li>
-										<a href="javascript:void(0)">¼îÇÎ¸ô</a>
+										<a href="javascript:void(0)">ì‡¼í•‘ëª°</a>
 										<div class="mo_menu_gnb_small_wrap">
 											<div class="mo_menu_gnb_small">
 												<a href="shop/product_list6261.html?s_cate_cd1=03">SET</a><a href="shop/product_list27a3.html?s_cate_cd1=01">BEAUTY</a><a href="shop/product_list85a5.html?s_cate_cd1=02">HEALTH</a><a href="shop/product_listb552.html?s_cate_cd1=05">LIVING</a>
@@ -297,7 +295,7 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 										</div>
 									</li>
 									<li>
-										<a href="javascript:void(0)">ÇØ¿ÜÁ÷±¸</a>
+										<a href="javascript:void(0)">í•´ì™¸ì§êµ¬</a>
 										<div class="mo_menu_gnb_small_wrap">
 											<div class="mo_menu_gnb_small">
 												<a href="shop/product_list_overaa69.html?s_cate_cd1=2004">SET</a><a href="shop/product_list_over6281.html?s_cate_cd1=2001">BEAUTY</a><a href="shop/product_list_over85d6.html?s_cate_cd1=2002">HEALTH</a><a href="shop/product_list_over9d6f.html?s_cate_cd1=2003">LIVING</a>
@@ -305,7 +303,7 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 										</div>
 									</li>
 									<!-- <li>
-										<a href="javascript:void(0)">±¸µ¶</a>
+										<a href="javascript:void(0)">êµ¬ë…</a>
 										<div class="mo_menu_gnb_small_wrap">
 											<div class="mo_menu_gnb_small">
 												
@@ -313,7 +311,7 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 										</div>
 									</li> -->
 									<li>
-										<a href="javascript:void(0)">Á¦ÈŞ»çÀÌÆ®</a>
+										<a href="javascript:void(0)">ì œíœ´ì‚¬ì´íŠ¸</a>
 										<div class="mo_menu_gnb_small_wrap">
 											<div class="mo_menu_gnb_small">
 												
@@ -324,7 +322,7 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 							</div>
 							<!--
 							<div class="mo_shop_sub_bottom_brand">
-								<p>ºê·£µå</p>
+								<p>ë¸Œëœë“œ</p>
 								<div class="mo_brand_cate">
 									<span><a href="#none">Brand A</a></span>
 									<span><a href="#none">Brand B</a></span>
@@ -336,109 +334,109 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 						</div>
 					</li>
 					<li>
-						<a class="mo_menu_gnb_big_trigger" href="javascript:void(0)">¾ÆÄ«µ¥¹Ì</a>
+						<a class="mo_menu_gnb_big_trigger" href="javascript:void(0)">ì•„ì¹´ë°ë¯¸</a>
 						<div class="mo_shop_sub">
 							<div class="mo_shop_sub_bottom">
 								<ul>
 									<li>
-										<a href="javascript:void(0)">ºñÁî´Ï½º</a>
+										<a href="javascript:void(0)">ë¹„ì¦ˆë‹ˆìŠ¤</a>
 										<div class="mo_menu_gnb_small_wrap">
 											<div class="mo_menu_gnb_small">
-												<a href="academy/businessc536.html?bbs_cate=Y0001">È¸»ç¼Ò°³</a>
-												<a href="academy/business16a8.html?bbs_cate=Y0002">¸®¿öµåÇÁ·Î±×·¥</a>
+												<a href="academy/businessc536.html?bbs_cate=Y0001">íšŒì‚¬ì†Œê°œ</a>
+												<a href="academy/business16a8.html?bbs_cate=Y0002">ë¦¬ì›Œë“œí”„ë¡œê·¸ë¨</a>
 											</div>
 										</div>
 									</li>
 									<li>
-										<a href="javascript:void(0)">Á¦Ç°</a>
+										<a href="javascript:void(0)">ì œí’ˆ</a>
 										<div class="mo_menu_gnb_small_wrap">
 											<div class="mo_menu_gnb_small">
-												<!-- <a href="/academy/business.html?bbs_cate=Y0003">ºê·£µå</a> -->
-												<a href="academy/businessd4ec.html?bbs_cate=Y0004">Á¦Ç°</a>
+												<!-- <a href="/academy/business.html?bbs_cate=Y0003">ë¸Œëœë“œ</a> -->
+												<a href="academy/businessd4ec.html?bbs_cate=Y0004">ì œí’ˆ</a>
 											</div>
 										</div>
 									</li>
 									<li class="not_psuedo">
-										<a href="academy/business6f94.html?bbs_cate=Y0005">e-·¯´×</a>
+										<a href="academy/business6f94.html?bbs_cate=Y0005">e-ëŸ¬ë‹</a>
 									</li>
 								</ul>
 							</div>
 						</div>
 					</li>
-					<li><a href="myoffice/main.html">¸¶ÀÌ¿ÀÇÇ½º</a></li>
+					<li><a href="myoffice/main.html">ë§ˆì´ì˜¤í”¼ìŠ¤</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 </header>
-<a title="¸Ç À§·Î" href="#" class="gotop"><img src="img/main/top_arrow.png"></a>
+<a title="ë§¨ ìœ„ë¡œ" href="#" class="gotop"><img src="img/main/top_arrow.png"></a>
 
 <div class="cart_layer_popup">
 	<h3>SHOPPING BAG</h3>
 	<div class="cart_bg">
 		<div class="cart_bg_inner">
 			<div class="accordion_box">
-				<a class="accordion_btn" href="javascript:void(0);">ÀÏ¹İ»óÇ°(<label id="cart_cnt">0</label>)</a>
+				<a class="accordion_btn" href="javascript:void(0);">ì¼ë°˜ìƒí’ˆ(<label id="cart_cnt">0</label>)</a>
 				<div class="slide local">
 					<div class="pick_item_empty">
-						<h1>Àå¹Ù±¸´Ï¿¡ »óÇ°ÀÌ ¾ø½À´Ï´Ù.</h1>
+						<h1>ì¥ë°”êµ¬ë‹ˆì— ìƒí’ˆì´ ì—†ìŠµë‹ˆë‹¤.</h1>
 					</div>
 					<div class="bill_box">
 						<div class="bill_rows">
-							<!-- <p>ÃÑ PV</p> -->
-                            <p>ÃÑ XP</p>
+							<!-- <p>ì´ PV</p> -->
+                            <p>ì´ XP</p>
 							<em id="cart_tot_pv">0</em>
 						</div>
 						<div class="bill_rows" style="display:;">
-							<p>ÃÑ SV</p>
+							<p>ì´ SV</p>
 							<em id="cart_tot_pv3">0</em>
 						</div>
 						<div class="bill_rows">
-							<p>»óÇ°±İ¾×</p>
-							<span><b id="cart_tot_prod">0</b>¿ø</span>
+							<p>ìƒí’ˆê¸ˆì•¡</p>
+							<span><b id="cart_tot_prod">0</b>ì›</span>
 						</div>
 						<div class="bill_rows">
-							<p>¹è¼Ûºñ</p>
-							<span><b id="cart_deli_amt">0</b>¿ø</span>
+							<p>ë°°ì†¡ë¹„</p>
+							<span><b id="cart_deli_amt">0</b>ì›</span>
 						</div>
 						<div class="bill_rows" style="border-top: 1px solid #000;">
-							<p>ÃÑ ±İ¾×</p>
-							<span><b id="cart_tot_amt">0</b>¿ø</span>
+							<p>ì´ ê¸ˆì•¡</p>
+							<span><b id="cart_tot_amt">0</b>ì›</span>
 						</div>
 					</div>
-					<button class="cart_layer_order_btn" type="button" onclick="fnLayerCartOrder('4101');">ÁÖ¹®ÇÏ±â</button>
+					<button class="cart_layer_order_btn" type="button" onclick="fnLayerCartOrder('4101');">ì£¼ë¬¸í•˜ê¸°</button>
 				</div>
 			</div>
 			<div class="accordion_box">
-				<a class="accordion_btn" href="javascript:void(0);">ÇØ¿ÜÁ÷±¸»óÇ°(<label id="cart_cnt_over">0</label>)</a>
+				<a class="accordion_btn" href="javascript:void(0);">í•´ì™¸ì§êµ¬ìƒí’ˆ(<label id="cart_cnt_over">0</label>)</a>
 				<div class="slide overseas">
 					<div class="pick_item_empty">
-						<h1>Àå¹Ù±¸´Ï¿¡ »óÇ°ÀÌ ¾ø½À´Ï´Ù.</h1>
+						<h1>ì¥ë°”êµ¬ë‹ˆì— ìƒí’ˆì´ ì—†ìŠµë‹ˆë‹¤.</h1>
 					</div>
 					<div class="bill_box">
 						<div class="bill_rows">
-                            <!-- <p>ÃÑ PV</p> -->
-                            <p>ÃÑ XP</p>
+                            <!-- <p>ì´ PV</p> -->
+                            <p>ì´ XP</p>
 							<em id="cart_tot_pv_over">0</em>
 						</div>
 						<div class="bill_rows" style="display:;">
-							<p>ÃÑ SV</p>
+							<p>ì´ SV</p>
 							<em id="cart_tot_pv3_over">0</em>
 						</div>
 						<div class="bill_rows">
-							<p>»óÇ°±İ¾×</p>
-							<span><b id="cart_tot_prod_over">0</b>¿ø</span>
+							<p>ìƒí’ˆê¸ˆì•¡</p>
+							<span><b id="cart_tot_prod_over">0</b>ì›</span>
 						</div>
 						<div class="bill_rows">
-							<p>¹è¼Ûºñ</p>
-							<span><b id="cart_deli_amt_over">0</b>¿ø</span>
+							<p>ë°°ì†¡ë¹„</p>
+							<span><b id="cart_deli_amt_over">0</b>ì›</span>
 						</div>
 						<div class="bill_rows" style="border-top: 1px solid #000;">
-							<p>ÃÑ ±İ¾×</p>
-							<span><b id="cart_tot_amt_over">0</b>¿ø</span>
+							<p>ì´ ê¸ˆì•¡</p>
+							<span><b id="cart_tot_amt_over">0</b>ì›</span>
 						</div>
 					</div>
-					<button class="cart_layer_order_btn" type="button" onclick="fnLayerCartOrder('4103');">ÁÖ¹®ÇÏ±â</button>
+					<button class="cart_layer_order_btn" type="button" onclick="fnLayerCartOrder('4103');">ì£¼ë¬¸í•˜ê¸°</button>
 				</div>
 			</div>
 		</div>
@@ -449,7 +447,7 @@ function fnCartInsert(fPRODUCT_CD, fORDER_KIND){
 <div class="cart_overlay"></div>
 <script>
 /*
-¿ìÃø Àå¹Ù±¸´Ï °ü·Ã S
+ìš°ì¸¡ ì¥ë°”êµ¬ë‹ˆ ê´€ë ¨ S
 */
 function fnLayerCartOrder(fKIND) {
 	var _url = (fKIND == '4101') ? '/shop/order.html' : '/shop/order_overseas.html';
@@ -499,11 +497,11 @@ function fnCartLoad(fCARTNO){
 	}
 }
 
-function cart_modify(cart_no, work_type, product_cd, qty) { // Àå¹Ù±¸´Ï¿¡ ´ã±â
+function cart_modify(cart_no, work_type, product_cd, qty) { // ì¥ë°”êµ¬ë‹ˆì— ë‹´ê¸°
 	var userid		= ("") ? "" : "940593341";
 	var is_check 	= '1';
 
-	// »õ·Î µî·Ï½Ã Ä«Æ®°¡ ¿­·Á ÀÖÁö ¾ÊÀ¸¸é ¿­¾îÁÖ¼¼¿ä.
+	// ìƒˆë¡œ ë“±ë¡ì‹œ ì¹´íŠ¸ê°€ ì—´ë ¤ ìˆì§€ ì•Šìœ¼ë©´ ì—´ì–´ì£¼ì„¸ìš”.
 	if (work_type == 'NEW') {
 		if (sidenav.isOpen != true) {
 			sidenav.sidenav.classList.add("open");
@@ -554,7 +552,7 @@ function cart_modify(cart_no, work_type, product_cd, qty) { // Àå¹Ù±¸´Ï¿¡ ´ã±â
 			alert('HTTP message body (jqXHR.responseText): ' + '\n' + jqXHR.responseText);
 		});
 	} else {
-		alert('·Î±×ÀÎ ÈÄ ÀÌ¿ë°¡´É ÇÕ´Ï´Ù.');
+		alert('ë¡œê·¸ì¸ í›„ ì´ìš©ê°€ëŠ¥ í•©ë‹ˆë‹¤.');
 		location.href = 'pc/member/login.html';
 		return false;
 	}
@@ -591,8 +589,8 @@ function fnCartWriteList(items){
 				addHtml += '			<span>' + formatComma(item.prod_pv3, 0) + '</span>';
 				addHtml += '		</div>';
 				addHtml += '		<div class="item_rows">';
-				addHtml += '			<p>ÆÇ¸Å°¡</p>';
-				addHtml += '			<span><b>' + formatComma(item.prod_amt, 0) + '</b>¿ø</span>';
+				addHtml += '			<p>íŒë§¤ê°€</p>';
+				addHtml += '			<span><b>' + formatComma(item.prod_amt, 0) + '</b>ì›</span>';
 				addHtml += '		</div>';
 				addHtml += '		<div class="item_price_rows">';
 				addHtml += '			<div class="l">';
@@ -600,7 +598,7 @@ function fnCartWriteList(items){
 				addHtml += '				<input type="text" id="cartQty' + item.reg_no + '" value="' + item.prod_qty + '" onfocusout="cart_modify(\'' + item.reg_no + '\',\'MOD\',\'\', this.value);" onkeypress="return checkNumber(event)" />';
 				addHtml += '				<button type="button" onclick="cart_modify(\'' + item.reg_no + '\',\'MOD\',\'\', \'p\');"><img src="/img/shop/plus_btn.png"></button>';
 				addHtml += '			</div>';
-				addHtml += '			<span><b id="cartAmt' + item.reg_no + '">' + formatComma(item.buy_amt, 0) + '</b>¿ø</span>';
+				addHtml += '			<span><b id="cartAmt' + item.reg_no + '">' + formatComma(item.buy_amt, 0) + '</b>ì›</span>';
 				addHtml += '		</div>';
 				addHtml += '		<button class="item_remove_btn" type="button" onclick="cart_modify(\'' + item.reg_no + '\',\'DEL_P\');"><img src="/img/shop/pop_item_remove.png"></button>';
 				addHtml += '	</div>';
@@ -619,11 +617,11 @@ function fnCartWriteList(items){
 
 	}
 
-	// Á¦Ç° ¾øÀ¸¸é
+	// ì œí’ˆ ì—†ìœ¼ë©´
 	if (cntOverseas == 0) {
 		addHtml = '';
 		addHtml += '<div class="pick_item_empty">';
-		addHtml += '	<h1>Àå¹Ù±¸´Ï¿¡ »óÇ°ÀÌ ¾ø½À´Ï´Ù.</h1>';
+		addHtml += '	<h1>ì¥ë°”êµ¬ë‹ˆì— ìƒí’ˆì´ ì—†ìŠµë‹ˆë‹¤.</h1>';
 		addHtml += '</div>';
 		$(".slide.overseas"	).prepend(addHtml);
 		$('.slide.overseas').hide().prev('a').removeClass('on');
@@ -638,7 +636,7 @@ function fnCartWriteList(items){
 	if (cntLocal == 0) {
 		addHtml = '';
 		addHtml += '<div class="pick_item_empty">';
-		addHtml += '	<h1>Àå¹Ù±¸´Ï¿¡ »óÇ°ÀÌ ¾ø½À´Ï´Ù.</h1>';
+		addHtml += '	<h1>ì¥ë°”êµ¬ë‹ˆì— ìƒí’ˆì´ ì—†ìŠµë‹ˆë‹¤.</h1>';
 		addHtml += '</div>';
 		$(".slide.local"	).prepend(addHtml);
 		$('.slide.local').hide().prev('a').removeClass('on');
@@ -683,7 +681,7 @@ function fnCartCalc(items, fCARTNO){
 			if (fCARTNO == item.reg_no){
 				$('#cartQty' + item.reg_no).val(item.prod_qty);
 				$('#cartAmt' + item.reg_no).text(formatComma(item.buy_amt, 0));
-				// $('#cartAmt' + item.reg_no).text(formatComma(item.buy_amt, 0) + '¿ø');
+				// $('#cartAmt' + item.reg_no).text(formatComma(item.buy_amt, 0) + 'ì›');
 			}
 		}
 	});
@@ -725,7 +723,7 @@ function checkNumber(event) {
 
 	return false;
 }
-/* Àå¹Ù±¸´Ï E */
+/* ì¥ë°”êµ¬ë‹ˆ E */
 </script>
 		<!-- Main Banner -->
 		<article id="main_banner">
@@ -766,7 +764,7 @@ function checkNumber(event) {
 				</div>
 				<div class="swiper-pagination my_pagination"></div>
 			</div>
-			<!-- ¹è³Ê°¡ 1°³¶ó¼­ °¡¸²Ã³¸® /js/custom.js¿¡ 0116À¸·Î ÀÚµ¿ ½½¶óÀÌµå falseÃ³¸®µµ ÇØµÒ.-->
+			<!-- ë°°ë„ˆê°€ 1ê°œë¼ì„œ ê°€ë¦¼ì²˜ë¦¬ /js/custom.jsì— 0116ìœ¼ë¡œ ìë™ ìŠ¬ë¼ì´ë“œ falseì²˜ë¦¬ë„ í•´ë‘ .-->
 			<!--<div class="main_swiper_arrow_wrap">
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
@@ -779,10 +777,10 @@ function checkNumber(event) {
 					<div class="small_banner_desc">
 						<h3>OPPORTUNITY</h3>
 						<p>
-							°Ç°­°ú À£ºù, ¿©À¯·Î¿î »î°ú ÀçÁ¤Àû ÀÚÀ¯, ±×¸®°í <br>
-							¸¶À½ÀÇ ÆòÈ­¸¦ Áñ±æ ¼ö ÀÖ´Â ¿ì¸®Ä¿¸Ó½º¿Í ÇÔ²² ÇÏ¼¼¿ä.
+							ê±´ê°•ê³¼ ì›°ë¹™, ì—¬ìœ ë¡œìš´ ì‚¶ê³¼ ì¬ì •ì  ììœ , ê·¸ë¦¬ê³  <br>
+							ë§ˆìŒì˜ í‰í™”ë¥¼ ì¦ê¸¸ ìˆ˜ ìˆëŠ” ìš°ë¦¬ì»¤ë¨¸ìŠ¤ì™€ í•¨ê»˜ í•˜ì„¸ìš”.
 						</p>
-						<a href="member/join01.html">½ÃÀÛÇÏ±â <img src="img/main/arrow_right.png"></a>
+						<a href="member/join01.html">ì‹œì‘í•˜ê¸° <img src="img/main/arrow_right.png"></a>
 					</div>
 				</div>
 			</div>
@@ -793,7 +791,7 @@ function checkNumber(event) {
 			<div class="new_product_bg">
 				<div class="new_product_heading">
 					<h2>NEW PRODUCT</h2>
-					<p>Â÷¿øÀÌ ´Ù¸¥ ¿ì¸®Ä¿¸Ó½ºÀÇ <br> »óÇ°À» ¸¸³ªº¸¼¼¿ä.</p>
+					<p>ì°¨ì›ì´ ë‹¤ë¥¸ ìš°ë¦¬ì»¤ë¨¸ìŠ¤ì˜ <br> ìƒí’ˆì„ ë§Œë‚˜ë³´ì„¸ìš”.</p>
 					<a href="shop/product_list.html">VIEW MORE <img src="img/main/more_plus.png"></a>
 				</div>
 				<div class="swiper-new">
@@ -802,13 +800,13 @@ function checkNumber(event) {
 						<div class="swiper-slide slide-new">
 							<!-- <a href="/shop/product_detail.html?qty=1&product_cd=21000011"> -->
 								<div style="cursor: pointer;" onclick="location.href='shop/product_detail3413.html?qty=1&amp;product_cd=21000011';" class="new_product_item">
-									<img src="bbs/upload/%ec%8d%b8%eb%84%a4%ec%9d%bc_%ec%a0%95%ec%82%ac%ea%b0%81%ed%98%953.png" alt="[ÁÖ¹®ºÒ°¡] ¸£³×Æ®¸£ Æ¼½ºÅºÅº (200g / 5°³ 1SET)" />
+									<img src="bbs/upload/%ec%8d%b8%eb%84%a4%ec%9d%bc_%ec%a0%95%ec%82%ac%ea%b0%81%ed%98%953.png" alt="[ì£¼ë¬¸ë¶ˆê°€] ë¥´ë„¤íŠ¸ë¥´ í‹°ìŠ¤íƒ„íƒ„ (200g / 5ê°œ 1SET)" />
 									<div class="new_product_item_desc">
-										<p>[ÁÖ¹®ºÒ°¡] ¸£³×Æ®¸£ Æ¼½ºÅºÅº (200g / 5°³ 1SET)</p>
-										<span><b>32,000</b>¿ø</span>
+										<p>[ì£¼ë¬¸ë¶ˆê°€] ë¥´ë„¤íŠ¸ë¥´ í‹°ìŠ¤íƒ„íƒ„ (200g / 5ê°œ 1SET)</p>
+										<span><b>32,000</b>ì›</span>
 									</div>
 									<div class="hover_buy">
-										<a href="shop/product_detail.html">±¸¸ÅÇÏ±â</a>
+										<a href="shop/product_detail.html">êµ¬ë§¤í•˜ê¸°</a>
 										<button type="button" onclick="fnCartInsert('21000011', '4101');"><img src="img/main/cart_white.png"></button>
 									</div>
 								</div>
@@ -818,13 +816,13 @@ function checkNumber(event) {
 						<div class="swiper-slide slide-new">
 							<!-- <a href="/shop/product_detail.html?qty=1&product_cd=21000004"> -->
 								<div style="cursor: pointer;" onclick="location.href='shop/product_detailcb99.html?qty=1&amp;product_cd=21000004';" class="new_product_item">
-									<img src="bbs/upload/%ec%97%90%eb%84%88%ec%a7%80%eb%a7%a5%ec%8a%a43.jpg" alt="[ÁÖ¹®ºÒ°¡] ÇÇÆ®½ºÆ÷Ã÷ ¿¡³ÊÁö ¸Æ½º Ä«Æä(90°³ÀÔ+¸Ó±×ÄÅ)" />
+									<img src="bbs/upload/%ec%97%90%eb%84%88%ec%a7%80%eb%a7%a5%ec%8a%a43.jpg" alt="[ì£¼ë¬¸ë¶ˆê°€] í”¼íŠ¸ìŠ¤í¬ì¸  ì—ë„ˆì§€ ë§¥ìŠ¤ ì¹´í˜(90ê°œì…+ë¨¸ê·¸ì»µ)" />
 									<div class="new_product_item_desc">
-										<p>[ÁÖ¹®ºÒ°¡] ÇÇÆ®½ºÆ÷Ã÷ ¿¡³ÊÁö ¸Æ½º Ä«Æä(90°³ÀÔ+¸Ó±×ÄÅ)</p>
-										<span><b>99,000</b>¿ø</span>
+										<p>[ì£¼ë¬¸ë¶ˆê°€] í”¼íŠ¸ìŠ¤í¬ì¸  ì—ë„ˆì§€ ë§¥ìŠ¤ ì¹´í˜(90ê°œì…+ë¨¸ê·¸ì»µ)</p>
+										<span><b>99,000</b>ì›</span>
 									</div>
 									<div class="hover_buy">
-										<a href="shop/product_detail.html">±¸¸ÅÇÏ±â</a>
+										<a href="shop/product_detail.html">êµ¬ë§¤í•˜ê¸°</a>
 										<button type="button" onclick="fnCartInsert('21000004', '4101');"><img src="img/main/cart_white.png"></button>
 									</div>
 								</div>
@@ -834,13 +832,13 @@ function checkNumber(event) {
 						<div class="swiper-slide slide-new">
 							<!-- <a href="/shop/product_detail.html?qty=1&product_cd=21000003"> -->
 								<div style="cursor: pointer;" onclick="location.href='shop/product_detail2e9f.html?qty=1&amp;product_cd=21000003';" class="new_product_item">
-									<img src="bbs/upload/%ec%8a%88%ed%94%84%eb%a6%bc%eb%b8%94%eb%9e%993.jpg" alt="[ÁÖ¹®ºÒ°¡] ·Î¿­ Á©¸® ½´ÇÁ¸² ºí·¢ Ä«Æä(90°³ÀÔ+¸Ó±×ÄÅ) " />
+									<img src="bbs/upload/%ec%8a%88%ed%94%84%eb%a6%bc%eb%b8%94%eb%9e%993.jpg" alt="[ì£¼ë¬¸ë¶ˆê°€] ë¡œì—´ ì ¤ë¦¬ ìŠˆí”„ë¦¼ ë¸”ë™ ì¹´í˜(90ê°œì…+ë¨¸ê·¸ì»µ) " />
 									<div class="new_product_item_desc">
-										<p>[ÁÖ¹®ºÒ°¡] ·Î¿­ Á©¸® ½´ÇÁ¸² ºí·¢ Ä«Æä(90°³ÀÔ+¸Ó±×ÄÅ) </p>
-										<span><b>99,000</b>¿ø</span>
+										<p>[ì£¼ë¬¸ë¶ˆê°€] ë¡œì—´ ì ¤ë¦¬ ìŠˆí”„ë¦¼ ë¸”ë™ ì¹´í˜(90ê°œì…+ë¨¸ê·¸ì»µ) </p>
+										<span><b>99,000</b>ì›</span>
 									</div>
 									<div class="hover_buy">
-										<a href="shop/product_detail.html">±¸¸ÅÇÏ±â</a>
+										<a href="shop/product_detail.html">êµ¬ë§¤í•˜ê¸°</a>
 										<button type="button" onclick="fnCartInsert('21000003', '4101');"><img src="img/main/cart_white.png"></button>
 									</div>
 								</div>
@@ -850,13 +848,13 @@ function checkNumber(event) {
 						<div class="swiper-slide slide-new">
 							<!-- <a href="/shop/product_detail.html?qty=1&product_cd=21000002"> -->
 								<div style="cursor: pointer;" onclick="location.href='shop/product_detail69bd.html?qty=1&amp;product_cd=21000002';" class="new_product_item">
-									<img src="bbs/upload/%eb%a7%88%eb%88%84%ec%b9%b4%ed%97%88%eb%8b%883.jpg" alt="[ÁÖ¹®ºÒ°¡] ·Î¿­ Á©¸® ¸¶´©Ä« Çã´Ï Ä«Æä(90°³ÀÔ+¸Ó±×ÄÅ)" />
+									<img src="bbs/upload/%eb%a7%88%eb%88%84%ec%b9%b4%ed%97%88%eb%8b%883.jpg" alt="[ì£¼ë¬¸ë¶ˆê°€] ë¡œì—´ ì ¤ë¦¬ ë§ˆëˆ„ì¹´ í—ˆë‹ˆ ì¹´í˜(90ê°œì…+ë¨¸ê·¸ì»µ)" />
 									<div class="new_product_item_desc">
-										<p>[ÁÖ¹®ºÒ°¡] ·Î¿­ Á©¸® ¸¶´©Ä« Çã´Ï Ä«Æä(90°³ÀÔ+¸Ó±×ÄÅ)</p>
-										<span><b>99,000</b>¿ø</span>
+										<p>[ì£¼ë¬¸ë¶ˆê°€] ë¡œì—´ ì ¤ë¦¬ ë§ˆëˆ„ì¹´ í—ˆë‹ˆ ì¹´í˜(90ê°œì…+ë¨¸ê·¸ì»µ)</p>
+										<span><b>99,000</b>ì›</span>
 									</div>
 									<div class="hover_buy">
-										<a href="shop/product_detail.html">±¸¸ÅÇÏ±â</a>
+										<a href="shop/product_detail.html">êµ¬ë§¤í•˜ê¸°</a>
 										<button type="button" onclick="fnCartInsert('21000002', '4101');"><img src="img/main/cart_white.png"></button>
 									</div>
 								</div>
@@ -884,10 +882,10 @@ function checkNumber(event) {
 							<div class="swiper-slide">
 							<a href="shop/order1b69.html?qty=1&amp;product_cd=14000001">
 								<div class="best_product_item">
-									<img src="bbs/upload/2mt3.jpg" alt="[ÁÖ¹®ºÒ°¡] 2MT Çì¾îÅä´Ğ" />
+									<img src="bbs/upload/2mt3.jpg" alt="[ì£¼ë¬¸ë¶ˆê°€] 2MT í—¤ì–´í† ë‹‰" />
 									<div class="best_product_item_desc">
-										<p>[ÁÖ¹®ºÒ°¡] 2MT Çì¾îÅä´Ğ</p>
-										<span><b>99,000</b>¿ø</span>
+										<p>[ì£¼ë¬¸ë¶ˆê°€] 2MT í—¤ì–´í† ë‹‰</p>
+										<span><b>99,000</b>ì›</span>
 									</div>
 									<button type="button" onclick="fnCartInsert('14000001', '4101');"><img src="img/main/cart_white.png"></button>
 								</div>
@@ -897,10 +895,10 @@ function checkNumber(event) {
 							<div class="swiper-slide">
 							<a href="shop/orderfb7b.html?qty=1&amp;product_cd=14000002">
 								<div class="best_product_item">
-									<img src="bbs/upload/%ec%9d%bc%ec%83%81%ed%9a%8c%eb%b3%b53.jpg" alt="[ÁÖ¹®ºÒ°¡] ÀÏ»óÈ¸º¹ ¹ÙÀÌ¿À Äµµğ" />
+									<img src="bbs/upload/%ec%9d%bc%ec%83%81%ed%9a%8c%eb%b3%b53.jpg" alt="[ì£¼ë¬¸ë¶ˆê°€] ì¼ìƒíšŒë³µ ë°”ì´ì˜¤ ìº”ë””" />
 									<div class="best_product_item_desc">
-										<p>[ÁÖ¹®ºÒ°¡] ÀÏ»óÈ¸º¹ ¹ÙÀÌ¿À Äµµğ</p>
-										<span><b>198,000</b>¿ø</span>
+										<p>[ì£¼ë¬¸ë¶ˆê°€] ì¼ìƒíšŒë³µ ë°”ì´ì˜¤ ìº”ë””</p>
+										<span><b>198,000</b>ì›</span>
 									</div>
 									<button type="button" onclick="fnCartInsert('14000002', '4101');"><img src="img/main/cart_white.png"></button>
 								</div>
@@ -910,10 +908,10 @@ function checkNumber(event) {
 							<div class="swiper-slide">
 							<a href="shop/orderdd2c.html?qty=1&amp;product_cd=21000001">
 								<div class="best_product_item">
-									<img src="bbs/upload/%eb%b8%94%eb%9e%99%eb%a7%88%ec%b9%b43.jpg" alt="[ÁÖ¹®ºÒ°¡] ºí·¢¸¶Ä« ÇÁ¸®¹Ì¾ö 2000 (À¯Åë±âÇÑ 24³â 3¿ù)" />
+									<img src="bbs/upload/%eb%b8%94%eb%9e%99%eb%a7%88%ec%b9%b43.jpg" alt="[ì£¼ë¬¸ë¶ˆê°€] ë¸”ë™ë§ˆì¹´ í”„ë¦¬ë¯¸ì—„ 2000 (ìœ í†µê¸°í•œ 24ë…„ 3ì›”)" />
 									<div class="best_product_item_desc">
-										<p>[ÁÖ¹®ºÒ°¡] ºí·¢¸¶Ä« ÇÁ¸®¹Ì¾ö 2000 (À¯Åë±âÇÑ 24³â 3¿ù)</p>
-										<span><b>118,000</b>¿ø</span>
+										<p>[ì£¼ë¬¸ë¶ˆê°€] ë¸”ë™ë§ˆì¹´ í”„ë¦¬ë¯¸ì—„ 2000 (ìœ í†µê¸°í•œ 24ë…„ 3ì›”)</p>
+										<span><b>118,000</b>ì›</span>
 									</div>
 									<button type="button" onclick="fnCartInsert('21000001', '4101');"><img src="img/main/cart_white.png"></button>
 								</div>
@@ -938,14 +936,14 @@ function checkNumber(event) {
 					<div class="cate_layout category_banner_common">
 						<div style="cursor: pointer;" onclick="location.href='shop/product_list85a5.html?s_cate_cd1=02#page1'" class="cate_item cate_item_health">
 							<div class="cate_item_common_heading">
-								<h3>Çï½º</h3>
-								<p>º¸´Ù °Ç°­ÇÑ ¿¡³ÊÁö¿Í È°·ÂÀ» ÀÚ¿¬½º·´°Ô</p>
+								<h3>í—¬ìŠ¤</h3>
+								<p>ë³´ë‹¤ ê±´ê°•í•œ ì—ë„ˆì§€ì™€ í™œë ¥ì„ ìì—°ìŠ¤ëŸ½ê²Œ</p>
 							</div>
 						</div>
 						<div style="cursor: pointer;" onclick="location.href='shop/product_list27a3.html?s_cate_cd1=01#page1'" class="cate_item cate_item_beauty">
 							<div class="cate_item_common_heading">
-								<h3>ºäÆ¼</h3>
-								<p>¼ÒÁßÇÑ ÇÇºÎ, »ı±â ÀÖ´Â ¾Æ¸§´Ù¿ò</p>
+								<h3>ë·°í‹°</h3>
+								<p>ì†Œì¤‘í•œ í”¼ë¶€, ìƒê¸° ìˆëŠ” ì•„ë¦„ë‹¤ì›€</p>
 							</div>
 						</div>
 					</div>
@@ -982,7 +980,7 @@ function checkNumber(event) {
 											<div class="cate_center_item_heading item_heading2">
 												<h2 style="color: #7863a0; font-size: 32px;">2MT</h2>
 												<h3 style="color: #7863a0; font-weight: 400;">2 Miracle hair Tonic</h3>
-												<p style="color: #9b6e3e;">¸ÅÀÏ¸ÅÀÏ »ç¿ë°¡´ÉÇÑ µÎÇÇ ¿µ¾ç ÄÉ¾î</p>
+												<p style="color: #9b6e3e;">ë§¤ì¼ë§¤ì¼ ì‚¬ìš©ê°€ëŠ¥í•œ ë‘í”¼ ì˜ì–‘ ì¼€ì–´</p>
 											</div>
 										</div>
 									</div>
@@ -991,8 +989,8 @@ function checkNumber(event) {
 											<img src="/img/main/cate_bg_slide_03.jpg">
 											<div class="cate_center_item_heading item_heading3">
 												<h2 style="color: #7e8fa5; font-weight: 500; font-size: 32px;">HAAH</h2>
-												<h3 style="color: #7e8fa5; font-weight: 400; font-size: 24px;">½ºÅÄµåÇü °ø±âÃ»Á¤»ì±Õ±â</h3>
-												<p style="color: #9b6e3e;">ÄÚ·Î³ª¹ÙÀÌ·¯½º Á¦°Å ÇÏ¾Æ °ø±âÃ»Á¤»ì±Õ±â </p>
+												<h3 style="color: #7e8fa5; font-weight: 400; font-size: 24px;">ìŠ¤íƒ ë“œí˜• ê³µê¸°ì²­ì •ì‚´ê· ê¸°</h3>
+												<p style="color: #9b6e3e;">ì½”ë¡œë‚˜ë°”ì´ëŸ¬ìŠ¤ ì œê±° í•˜ì•„ ê³µê¸°ì²­ì •ì‚´ê· ê¸° </p>
 											</div>
 										</div>
 									</div> -->
@@ -1008,8 +1006,8 @@ function checkNumber(event) {
                                             <img src="/img/main/cate_bg_slide_04.jpg">
 											<div class="cate_center_item_heading item_heading4">
 												<h2 style="color: #d35f44; font-weight: 500; font-size: 32px;">PINKWONDER</h2>
-												<h3 style="color: #d35f44; font-weight: 400; font-size: 24px;">È£È£¹Ù ºñÅ¸ Å©¸²</h3>
-												<p style="color: #9b6e3e;">ºÓÀº»ö ¼ö¿ë¼º ºñÅ¸¹ÎB12 ÇÔÀ¯·Î <br> ÇÇºÎ °¡·Á¿òÀ» È¿°úÀûÀ¸·Î ÁøÁ¤!</p>
+												<h3 style="color: #d35f44; font-weight: 400; font-size: 24px;">í˜¸í˜¸ë°” ë¹„íƒ€ í¬ë¦¼</h3>
+												<p style="color: #9b6e3e;">ë¶‰ì€ìƒ‰ ìˆ˜ìš©ì„± ë¹„íƒ€ë¯¼B12 í•¨ìœ ë¡œ <br> í”¼ë¶€ ê°€ë ¤ì›€ì„ íš¨ê³¼ì ìœ¼ë¡œ ì§„ì •!</p>
 											</div>
 										</div>
 									</div> -->
@@ -1022,14 +1020,14 @@ function checkNumber(event) {
 					<div class="cate_layout category_banner_common">
 						<div style="cursor: pointer;" onclick="location.href='shop/product_listb552.html?s_cate_cd1=05#page1'" class="cate_item cate_item_daily">
 							<div class="cate_item_common_heading">
-								<h3>¸®ºù</h3>
-								<p>¾ÈÀüÇÏ°í °Ç°­ÇÑ »ıÈ°Á¦Ç°</p>
+								<h3>ë¦¬ë¹™</h3>
+								<p>ì•ˆì „í•˜ê³  ê±´ê°•í•œ ìƒí™œì œí’ˆ</p>
 							</div>
 						</div>
 						<div style="cursor: pointer;" onclick="location.href='http://wuuriishop.co.kr/'" class="cate_item cate_item_rent">
 							<div class="cate_item_common_heading">
-								<h3>Á¦ÈŞ¸ô</h3>
-								<!-- <p>ÇÕ¸®ÀûÀÎ ºñ¿ëÀÇ ·»Å» ¼­ºñ½º</p> -->
+								<h3>ì œíœ´ëª°</h3>
+								<!-- <p>í•©ë¦¬ì ì¸ ë¹„ìš©ì˜ ë Œíƒˆ ì„œë¹„ìŠ¤</p> -->
 							</div>
 						</div>
 					</div>
@@ -1056,12 +1054,12 @@ function checkNumber(event) {
 							</div>
 							<div class="brand_desc brand_desc1">
 								<span>PINKWONDER</span>
-								<h2>ÇÎÅ©¿ø´õ <b>¸ÅÁ÷½ºÅæ</b></h2>
+								<h2>í•‘í¬ì›ë” <b>ë§¤ì§ìŠ¤í†¤</b></h2>
 								<p>
-									1600¡É Æø¹ßÀû ¿¡³ÊÁö·Î ¿Ï¼ºµÈ<br>
-									ÇÎÅ©¿ø´õ ¸ÅÁ÷½ºÅæ
+									1600â„ƒ í­ë°œì  ì—ë„ˆì§€ë¡œ ì™„ì„±ëœ<br>
+									í•‘í¬ì›ë” ë§¤ì§ìŠ¤í†¤
 								</p>
-								<a href="shop/product_detaileab6.html?product_cd=13000012">ÀÚ¼¼È÷ º¸±â <img src="img/main/arrow_right.png"></a>
+								<a href="shop/product_detaileab6.html?product_cd=13000012">ìì„¸íˆ ë³´ê¸° <img src="img/main/arrow_right.png"></a>
 							</div>
 						</div>
 						<div id="brand_b" class="brand_tab">
@@ -1072,10 +1070,10 @@ function checkNumber(event) {
 								<span>HCO</span>
 								<h2>Ultimate Revitalizing Cream</h2>
 								<p>
-									ÆéÅ¸ÀÌµå ¼ÒÀç·Î °ÇÁ¶ÇÑ ÇÇºÎ¸¦ ºü¸£°Ô Àç»ı½ÃÅ°¸ç <br>
-									µ¿½Ã¿¡ ¹à°í ±ú²ıÇÑ ÇÇºÎ·Î °¡²Ù¾îÁÖ´Â ±â´É¼º Å©¸²
+									í©íƒ€ì´ë“œ ì†Œì¬ë¡œ ê±´ì¡°í•œ í”¼ë¶€ë¥¼ ë¹ ë¥´ê²Œ ì¬ìƒì‹œí‚¤ë©° <br>
+									ë™ì‹œì— ë°ê³  ê¹¨ë—í•œ í”¼ë¶€ë¡œ ê°€ê¾¸ì–´ì£¼ëŠ” ê¸°ëŠ¥ì„± í¬ë¦¼
 								</p>
-								<a href="shop/product_detail95be.html?product_cd=11000002">ÀÚ¼¼È÷ º¸±â <img src="img/main/arrow_right.png"></a>
+								<a href="shop/product_detail95be.html?product_cd=11000002">ìì„¸íˆ ë³´ê¸° <img src="img/main/arrow_right.png"></a>
 							</div>
 						</div>
 						<!-- <div id="brand_c" class="brand_tab">
@@ -1084,12 +1082,12 @@ function checkNumber(event) {
 							</div>
 							<div class="brand_desc brand_desc3">
 								<span>JINSIM</span>
-								<h2>ÁÖ¹æ¼¼Á¦ & ´Ù¸ñÀû Å¬¸®³Ê</h2>
+								<h2>ì£¼ë°©ì„¸ì œ & ë‹¤ëª©ì  í´ë¦¬ë„ˆ</h2>
 								<p>
-									¼¼Ã´°ú ³¿»õ¸¦ µ¿½Ã¿¡ ÇØ°á!<br>
-									Âîµç¶§µµ ÇÑ¹æ¿¡!
+									ì„¸ì²™ê³¼ ëƒ„ìƒˆë¥¼ ë™ì‹œì— í•´ê²°!<br>
+									ì°Œë“ ë•Œë„ í•œë°©ì—!
 								</p>
-								<a href="/shop/product_detail.html?product_cd=20000002">ÀÚ¼¼È÷ º¸±â <img src="/img/main/arrow_right.png"></a>
+								<a href="/shop/product_detail.html?product_cd=20000002">ìì„¸íˆ ë³´ê¸° <img src="/img/main/arrow_right.png"></a>
 							</div>
 						</div> -->
                         <div id="brand_c" class="brand_tab">
@@ -1098,12 +1096,12 @@ function checkNumber(event) {
 							</div>
 							<div class="brand_desc brand_desc3">
 								<span>RENATRE</span>
-								<h2>¹Ùµğ & Çì¾îÄÉ¾î</h2>
+								<h2>ë°”ë”” & í—¤ì–´ì¼€ì–´</h2>
 								<p>
-									¸£³×Æ®¸£´Â ºÒ¾î·Î<br>
-									´Ù½Ã ÅÂ¾î³ª´Ù, »ì¾Æ³ª´ÙÀÇ ¶æÀÔ´Ï´Ù.
+									ë¥´ë„¤íŠ¸ë¥´ëŠ” ë¶ˆì–´ë¡œ<br>
+									ë‹¤ì‹œ íƒœì–´ë‚˜ë‹¤, ì‚´ì•„ë‚˜ë‹¤ì˜ ëœ»ì…ë‹ˆë‹¤.
 								</p>
-								<a href="shop/product_detail02f9.html?product_cd=21000007">ÀÚ¼¼È÷ º¸±â <img src="img/main/arrow_right.png"></a>
+								<a href="shop/product_detail02f9.html?product_cd=21000007">ìì„¸íˆ ë³´ê¸° <img src="img/main/arrow_right.png"></a>
 							</div>
 						</div>
 						<div id="brand_d" class="brand_tab">
@@ -1112,12 +1110,12 @@ function checkNumber(event) {
 							</div>
 							<div class="brand_desc brand_desc4">
 								<span>RENEUB</span>
-								<h2>¸®´ººñ ¾ËÆÄ</h2>
+								<h2>ë¦¬ë‰´ë¹„ ì•ŒíŒŒ</h2>
 								<p>
-									ÀşÀº ½ÃÀıÀÇ °Ç°­À¸·Î<br>
-									´Ù½Ã »õ·Ó°Ô ´ç½ÅÀ» À§ÇÑ °Ç°­¼±¹° ¸®´ººñ
+									ì Šì€ ì‹œì ˆì˜ ê±´ê°•ìœ¼ë¡œ<br>
+									ë‹¤ì‹œ ìƒˆë¡­ê²Œ ë‹¹ì‹ ì„ ìœ„í•œ ê±´ê°•ì„ ë¬¼ ë¦¬ë‰´ë¹„
 								</p>
-								<a href="shop/product_detail8951.html?product_cd=19000001">ÀÚ¼¼È÷ º¸±â <img src="img/main/arrow_right.png"></a>
+								<a href="shop/product_detail8951.html?product_cd=19000001">ìì„¸íˆ ë³´ê¸° <img src="img/main/arrow_right.png"></a>
 							</div>
 						</div>
 					</div>
@@ -1130,20 +1128,20 @@ function checkNumber(event) {
 				<div class="bottom_banner_content">
 					<div class="bottom_banner_left">
 						<div class="bottom_banner_left_desc">
-							<span>¿ì¸®Ä¿¸Ó½º ¼Ò°³</span>
+							<span>ìš°ë¦¬ì»¤ë¨¸ìŠ¤ ì†Œê°œ</span>
 							<h3>WUURII COMMERCE <br>
 									THE STORY
 							</h3>
-							<a href="community/who.html">¹Ù·Î°¡±â <img src="img/main/arrow_right.png"></a>
+							<a href="community/who.html">ë°”ë¡œê°€ê¸° <img src="img/main/arrow_right.png"></a>
 						</div>
 					</div>
 					<div class="bottom_banner_right">
 						<div class="bottom_banner_right_desc">
-							<span style="font-weight: 500; color: #fcc40f;">Ä¿¹Â´ÏÆ¼</span>
+							<span style="font-weight: 500; color: #fcc40f;">ì»¤ë®¤ë‹ˆí‹°</span>
 							<h3>WUURII COMMERCE <br>
-									È¸»ç¼Ò½Ä
+									íšŒì‚¬ì†Œì‹
 							</h3>
-							<a href="community/company_news.html">¹Ù·Î°¡±â <img src="img/main/arrow_right.png"></a>
+							<a href="community/company_news.html">ë°”ë¡œê°€ê¸° <img src="img/main/arrow_right.png"></a>
 						</div>
 					</div>
 				</div>
@@ -1155,14 +1153,14 @@ function checkNumber(event) {
 		<div class="common_inner">
 			<div class="foot_btns_sns">
 				<div class="foot_btns">
-					<a href="community/terms.html">ÀÌ¿ë¾à°ü</a>
-					<a href="community/privacy.html">°³ÀÎÁ¤º¸Ã³¸®¹æÄ§</a>
-					<a class="seller_find_btn" href="javascript:void(0)">ÆÇ¸Å¿øÁ¶È¸</a>
-					<a target="_blank" href="https://www.ftc.go.kr/">°øÁ¤°Å·¡À§¿øÈ¸</a>
-					<!-- <a href="#none">Á÷Á¢ÆÇ¸ÅÁ¶ÇÕ</a>
-					<a target="_blank" href="https://kossa.or.kr/user/m3/bbs/union/ddcNotie/selectDdcNotiePopup.do">°øÁ¦¹øÈ£Á¶È¸</a> -->
-					<a target="_blank" href="http://likms.assembly.go.kr/law/jsp/law/Law.jsp?WORK_TYPE=LAW_BON&amp;LAW_ID=A0324&amp;PROM_DT=20130528&amp;PROM_NO=11839">¹æ¹®ÆÇ¸Åµî¿¡°üÇÑ¹ı·ü</a>
-					<a href="#none">Æò±ÕÈÄ¿ø¼ö´ç °øÁö</a>
+					<a href="community/terms.html">ì´ìš©ì•½ê´€</a>
+					<a href="community/privacy.html">ê°œì¸ì •ë³´ì²˜ë¦¬ë°©ì¹¨</a>
+					<a class="seller_find_btn" href="javascript:void(0)">íŒë§¤ì›ì¡°íšŒ</a>
+					<a target="_blank" href="https://www.ftc.go.kr/">ê³µì •ê±°ë˜ìœ„ì›íšŒ</a>
+					<!-- <a href="#none">ì§ì ‘íŒë§¤ì¡°í•©</a>
+					<a target="_blank" href="https://kossa.or.kr/user/m3/bbs/union/ddcNotie/selectDdcNotiePopup.do">ê³µì œë²ˆí˜¸ì¡°íšŒ</a> -->
+					<a target="_blank" href="http://likms.assembly.go.kr/law/jsp/law/Law.jsp?WORK_TYPE=LAW_BON&amp;LAW_ID=A0324&amp;PROM_DT=20130528&amp;PROM_NO=11839">ë°©ë¬¸íŒë§¤ë“±ì—ê´€í•œë²•ë¥ </a>
+					<a href="#none">í‰ê· í›„ì›ìˆ˜ë‹¹ ê³µì§€</a>
 				</div>
 				<div class="foot_sns">
 					<a target="_blank" href="https://www.youtube.com/channel/UC2Lp8g61LvnXvwO56q-ZPOA"><img src="img/main/footer_sns_youtube.png"></a>
@@ -1172,11 +1170,11 @@ function checkNumber(event) {
 				</div>
 			</div>
 			<div class="foot_intro">
-				<p>È¸»ç¸í : (ÁÖ)¿ì¸®Ä¿¸Ó½º &nbsp;´ëÇ¥ÀÚ¸í : ÀåÀº¿µ</p>
+				<p>íšŒì‚¬ëª… : (ì£¼)ìš°ë¦¬ì»¤ë¨¸ìŠ¤ &nbsp;ëŒ€í‘œìëª… : ì¥ì€ì˜</p>
 				<address>
-					ºÎ»ê±¤¿ª½Ã ÇØ¿î´ë±¸ ¼¼½Ç·Î 69¹ø±æ 24 BYC¸¶Æ® ÇØ¿î´ë »ç¿Á 4Ãş 402È£ <br> ´ëÇ¥¹øÈ£ : <b><a href="tel:1833-7538">1833-7538</a></b> &nbsp; FAX : <b>0505-300-7538</b> &nbsp; ÀÌ¸ŞÀÏ : <b><a href="mailto:Help@wuurii.market">Help@wuurii.market</a></b>
+					ë¶€ì‚°ê´‘ì—­ì‹œ í•´ìš´ëŒ€êµ¬ ì„¸ì‹¤ë¡œ 69ë²ˆê¸¸ 24 BYCë§ˆíŠ¸ í•´ìš´ëŒ€ ì‚¬ì˜¥ 4ì¸µ 402í˜¸ <br> ëŒ€í‘œë²ˆí˜¸ : <b><a href="tel:1833-7538">1833-7538</a></b> &nbsp; FAX : <b>0505-300-7538</b> &nbsp; ì´ë©”ì¼ : <b><a href="mailto:Help@wuurii.market">Help@wuurii.market</a></b>
 				</address>
-				<p>Åë½ÅÆÇ¸Åµî·Ï¹øÈ£ : Á¦ 2022-ºÎ»êÇØ¿î´ë-0563È£ »ç¾÷ÀÚµî·Ï¹øÈ£ : 178-87-02694</p>
+				<p>í†µì‹ íŒë§¤ë“±ë¡ë²ˆí˜¸ : ì œ 2022-ë¶€ì‚°í•´ìš´ëŒ€-0563í˜¸ ì‚¬ì—…ìë“±ë¡ë²ˆí˜¸ : 178-87-02694</p>
 			</div>
 		</div>
 	</div>
@@ -1184,43 +1182,43 @@ function checkNumber(event) {
 		<div class="common_inner">
 			<div class="foot_copy">
 				<p>
-					ALL CONTENTS Copyright ¨Ï 2022 WUURII COMMERCE  LTD.ALL RIGHTS RESERVED
+					ALL CONTENTS Copyright â“’ 2022 WUURII COMMERCE  LTD.ALL RIGHTS RESERVED
 				</p>
 				<a href="index-2.html"><img src="img/main/logo_footer.png"></a>
 			</div>
 		</div>
 	</div>
 	<div class="pop_find_id">
-		<h3>ÆÇ¸Å¿ø Á¶È¸</h3>
+		<h3>íŒë§¤ì› ì¡°íšŒ</h3>
 		<form id="frm_find_dist">
 			<div class="find_id_form">
 				<div class="find_id_rows">
-					<p>È¸¿ø¹øÈ£ <b>*</b></p>
-					<input type="text" name="userid" id="dist_userid" placeholder="È¸¿ø¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä." />
+					<p>íšŒì›ë²ˆí˜¸ <b>*</b></p>
+					<input type="text" name="userid" id="dist_userid" placeholder="íšŒì›ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”." />
 				</div>
 				<div class="find_id_rows">
-					<p>ÀÌ¸§ <b>*</b></p>
-					<input type="text" name="username" id="dist_username" placeholder="ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä." />
+					<p>ì´ë¦„ <b>*</b></p>
+					<input type="text" name="username" id="dist_username" placeholder="ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš”." />
 				</div>
 				<div class="find_id_rows">
-					<p>»ı³â¿ùÀÏ <b>*</b></p>
-					<input type="date" name="birthday" id="dist_birthday" placeholder="»ı³â¿ùÀÏ 8ÀÚ¸® ¿¹)19800101" />
+					<p>ìƒë…„ì›”ì¼ <b>*</b></p>
+					<input type="date" name="birthday" id="dist_birthday" placeholder="ìƒë…„ì›”ì¼ 8ìë¦¬ ì˜ˆ)19800101" />
 				</div>
 				<!--
 				<div class="find_id_rows">
-					<p>¼ºº° <b>*</b></p>
+					<p>ì„±ë³„ <b>*</b></p>
 					<input type="radio" id="find_id_gender_male" name="gender" value="1" checked />
-					<label for="find_id_gender_male"><em></em>³²¼º</label>
+					<label for="find_id_gender_male"><em></em>ë‚¨ì„±</label>
 					<input type="radio" id="find_id_gender_female" name="gender" value="2" />
-					<label for="find_id_gender_female"><em></em>¿©¼º</label>
+					<label for="find_id_gender_female"><em></em>ì—¬ì„±</label>
 				</div>
 				<div class="find_id_rows">
-					<p>ÈŞ´ëÆù¹øÈ£ <b>*</b></p>
-					<input type="tel" name="mobile" id="dist_mobile" placeholder="ÈŞ´ëÆù ¹øÈ£´Â ¼ıÀÚ¸¸ ÀÔ·ÂÇÏ¼¼¿ä." />
+					<p>íœ´ëŒ€í°ë²ˆí˜¸ <b>*</b></p>
+					<input type="tel" name="mobile" id="dist_mobile" placeholder="íœ´ëŒ€í° ë²ˆí˜¸ëŠ” ìˆ«ìë§Œ ì…ë ¥í•˜ì„¸ìš”." />
 				</div>
 				-->
 				<div id="dist_result_pane"></div>
-				<button type="button" id="btn_dist_search">Á¶È¸ÇÏ±â</button>
+				<button type="button" id="btn_dist_search">ì¡°íšŒí•˜ê¸°</button>
 			</div>
 		</form>
 		<button class="pop_find_id_close" type="button"><img src="img/member/pop_close.png"></button>
@@ -1239,17 +1237,17 @@ function checkNumber(event) {
 
 			$("#btn_dist_search").on("click", function(){
 				if ($("#dist_userid").val().length != 10){
-					alert("È¸¿ø¹øÈ£¸¦ ³Ö¾îÁÖ¼¼¿ä.");
+					alert("íšŒì›ë²ˆí˜¸ë¥¼ ë„£ì–´ì£¼ì„¸ìš”.");
 					$("#dist_userid").focus();
 					return;
 				}
 				if ($("#dist_username").val() == ""){
-					alert("ÀÌ¸§À» ³Ö¾îÁÖ¼¼¿ä.");
+					alert("ì´ë¦„ì„ ë„£ì–´ì£¼ì„¸ìš”.");
 					$("#dist_username").focus();
 					return;
 				}
 				if ($("#dist_birthday").val().length != 10){
-					alert("»ı³â¿ùÀÏÀÌ Á¤È®ÇÏÁö ¾Ê½À´Ï´Ù.");
+					alert("ìƒë…„ì›”ì¼ì´ ì •í™•í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 					$("#dist_birthday").focus();
 					return;
 				}
@@ -1260,7 +1258,7 @@ function checkNumber(event) {
 				$.ajax({
 					url : ajax_url,
 					global :false,
-					contentType : "application/x-www-form-urlencoded; charset=euc-kr",
+					contentType : "application/x-www-form-urlencoded; charset=utf-8",
 					type : "POST",
 					data : data,
 					dataType: 'json',
@@ -1278,7 +1276,7 @@ function checkNumber(event) {
 
 					},
 					error:function(reponse,textStatus,errorThrown){
-						alert('Åë½ÅÀÌ ¿øÇÒÇÏÁö ¸øÇÏ¿© Á¤º¸¸¦ ºÒ·¯¿Ã ¼ö ¾ø½À´Ï´Ù. \n\nÀá½Ã ÈÄ ´Ù½Ã ½ÇÇàÇØ ÁÖ½Ê½Ã¿À.\n\n°¨»çÇÕ´Ï´Ù.');
+						alert('í†µì‹ ì´ ì›í• í•˜ì§€ ëª»í•˜ì—¬ ì •ë³´ë¥¼ ë¶ˆëŸ¬ì˜¬ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. \n\nì ì‹œ í›„ ë‹¤ì‹œ ì‹¤í–‰í•´ ì£¼ì‹­ì‹œì˜¤.\n\nê°ì‚¬í•©ë‹ˆë‹¤.');
 					},
 					beforeSend:function(){
 					}
@@ -1290,5 +1288,4 @@ function checkNumber(event) {
 	</div>
 </body>
 
-<!-- Mirrored from wuurii.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Apr 2024 00:09:12 GMT -->
 </html>
